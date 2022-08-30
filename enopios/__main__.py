@@ -21,7 +21,7 @@ HERE = pathlib.Path(__file__).parent
 
 def app():
     bootstrap.run(
-        file=str(HERE.joinpath("app.py")),
+        str(HERE.joinpath("app.py")),
         command_line=None,
         args=list(),
         flag_options=dict(),
