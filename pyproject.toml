@@ -12,6 +12,7 @@ streamlit = "*"
 [tool.poetry.dev-dependencies]
 pyoxidizer = "*"
 pre-commit = "*"
+black = "22.6.0"
 
 [tool.poetry.scripts]
 enopios = "enopios.__main__:app"
