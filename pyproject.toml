@@ -1,8 +1,12 @@
 [tool.poetry]
 name = "enopios"
 version = "0.2.0"
-description = ""
-authors = ["Simon Biggs <simon.biggs@radiotherapy.ai>"]
+description = "multi OS Electron app bundle for streamlit project with Github actions."
+authors = [
+    "Simon Biggs <simon.biggs@radiotherapy.ai>",
+    "Luc Vedrenne <luc.etu@unistra.fr>"
+]
+
 license = "Apache-2.0"
 
 [tool.poetry.dependencies]
@@ -15,7 +19,7 @@ pre-commit = "*"
 black = "22.6.0"
 
 [tool.poetry.scripts]
-enopios = "enopios.__main__:app"
+enopios = "enopios.__main__:main"
 
 [tool.isort]
 multi_line_output = 3
