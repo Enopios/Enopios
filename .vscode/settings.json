@@ -3,6 +3,11 @@
         "Enopios",
         "pyoxidizer",
         "pyproject",
-        "streamlit"
+        "shutil",
+        "snok",
+        "streamlit",
+        "USERPROFILE",
+        "venv",
+        "virtualenvs"
     ]
 }
