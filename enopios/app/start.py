@@ -21,12 +21,16 @@
 
 # ______________________________________________________________________ #
 
-from enopios.app import index
+import streamlit as st
+from streamlit.web.bootstrap import load_config_options, run
 
 
-def main():
-    index.main()
+def main(args):
+    start_streamlit_server(args.path, {})
 
 
-if __name__ == "__main__":
-    main()
+def start_streamlit_server(script_path, config):
+    load_config_options(flag_options=config)
+    # apply_streamlit_server_patches()
+    st._is_running_with_streamlit = True
+    run(script_path, "", [], flag_options={})
