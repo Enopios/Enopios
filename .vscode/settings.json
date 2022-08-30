@@ -3,6 +3,7 @@
         "Enopios",
         "pyoxidizer",
         "pyproject",
+        "shutil",
         "snok",
         "streamlit",
         "USERPROFILE",

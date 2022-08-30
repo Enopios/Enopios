@@ -72,8 +72,12 @@ jobs:
         run: |
           poetry run pyoxidizer build
 
+      - name: Create zip file of the build
+        run: |
+          python -c "import shutil; shutil.make_archive('release', 'zip', 'build/dist/')"
+
       - uses: actions/upload-artifact@v3
         with:
           name: Enopios-${{ runner.os }}
           path: |
-            build/dist/
+            release.zip
